@@ -4,6 +4,8 @@
     backdrop-filter: blur(8.9px);
     -webkit-backdrop-filter: blur(8.9px);
     border: 1px solid rgba(223, 223, 223, 0.3);
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
 }
 .porfolio-text h2{
     font-family: 'Lobster Two', cursive;
