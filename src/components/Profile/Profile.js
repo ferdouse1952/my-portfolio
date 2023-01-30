@@ -22,11 +22,21 @@ const Profile = () => {
                 <p className="fs-6">Front-End Developer</p>
               </div>
               <div className="d-flex justify-content-evenly social-icon m-4">
-                <i className="fa-brands fa-facebook-f"></i>
-                <i className="fa-brands fa-instagram"></i>
-                <i className="fa-brands fa-twitter"></i>
-                <i className="fa-brands fa-linkedin"></i>
-                <i className="fa-brands fa-github"></i>
+                <a href="https://www.facebook.com/">
+                  <i className="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                  <i className="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/?lang=en">
+                  <i className="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/">
+                  <i className="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/">
+                  <i className="fa-brands fa-github"></i>
+                </a>
               </div>
             </div>
             <hr />
@@ -34,7 +44,7 @@ const Profile = () => {
               <table className="table">
                 <tbody>
                   <tr className="d-flex justify-content-between">
-                    <td>Date of birth:</td>
+                    <td>Date of birth</td>
                     <td>22-02-1995</td>
                   </tr>
                   <tr className="d-flex justify-content-between">
@@ -42,7 +52,7 @@ const Profile = () => {
                     <td>BD</td>
                   </tr>
                   <tr className="d-flex justify-content-between">
-                    <td>Address:</td>
+                    <td>Address</td>
                     <td>Dhaka,Bangladesh</td>
                   </tr>
                 </tbody>
