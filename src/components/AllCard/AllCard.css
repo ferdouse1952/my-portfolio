@@ -25,20 +25,20 @@
 }
 .projetsImg:hover .project-details{
     right: 0;
-
 }
-.project-details button{
+.livebtn{
     font-family: 'Kanit', sans-serif;
-    font-weight: 300;
-    background-color: rgba(114, 114, 114, 0.212);
+    font-weight: 600;
+    background-color: #141313ee;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     border-radius: 10px;
-    color: #fff;
-    transition: 1s;
     border: none;
+    transition: 0.5s;
 }
-.project-details button:hover{
+.livebtn a{
+    text-decoration: none;
+    color: #fff;
+}
+.livebtn:hover{
     background-color: rgba(0, 0, 255, 0.082);
-    transform: scale(1.3);
-    border: 1px solid rgb(37, 35, 35);
 }

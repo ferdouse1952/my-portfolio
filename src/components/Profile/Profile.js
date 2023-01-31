@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./Profile.css";
-import photo from "../../Image/image.jpg";
 import About from "../AboutSection/About";
 import Portfolio from "../Portfolio/Portfolio";
 import { Link } from "react-router-dom";
@@ -14,31 +13,28 @@ const Profile = () => {
   return (
     <div>
       <div className="row m-0">
-        <div data-aos="fade-right" className="col-3 p-0 d-none d-lg-block">
-          <div className="side-bar p-4 h-100">
-            <div className="text-center mt-4">
-              <div className="name-div">
-                <h5 className="fs-3 pt-5">Ferdouse Binte Asad</h5>
-                <p className="fs-6">Front-End Developer</p>
-              </div>
-              <div className="d-flex justify-content-evenly social-icon m-4">
-                <a href="https://www.facebook.com/">
-                  <i className="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/">
-                  <i className="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/?lang=en">
-                  <i className="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/">
-                  <i className="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/">
-                  <i className="fa-brands fa-github"></i>
-                </a>
-              </div>
+        <div data-aos="fade-right" className="col-3 side p-0 d-none d-lg-block">
+          <div className="side-bar text-center p-4 h-100">
+            <h5 className="fs-3 pt-5">Ferdouse Binte Asad</h5>
+            <p className="fs-6">Front-End Developer</p>
+            <div className="d-flex justify-content-evenly social-icon">
+              <a href="https://www.facebook.com/">
+                <i className="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/">
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://twitter.com/?lang=en">
+                <i className="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/">
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/">
+                <i className="fa-brands fa-github"></i>
+              </a>
             </div>
+
             <hr />
             <div className="user-details-container container">
               <table className="table">
@@ -58,7 +54,6 @@ const Profile = () => {
                 </tbody>
               </table>
             </div>
-
             <div className="user-details-container container">
               <h4 className="fs-5 text-center pt-2">Languages</h4>
               <hr className="text-white" />
@@ -112,7 +107,7 @@ const Profile = () => {
               </table>
             </div>
             <div className="download-button text-center">
-              <button className="p-2">
+              <button className="pt-2 pb-2 ps-3 pe-3">
                 Download Button{" "}
                 <i className="fa-sharp fa-solid fa-download icon"></i>
               </button>
@@ -170,106 +165,6 @@ const Profile = () => {
                 ></button>
               </div>
             </div>
-            {/* <div className="offcanvas-body">
-              <div>
-                <div className="side-bar p-4 h-100">
-                  <div className="img-div mx-auto">
-                    <img src={photo} alt="" />
-                  </div>
-                  <div className="text-center mt-4">
-                    <div className="name-div">
-                      <h5 className="fs-3">Ferdouse Binte Asad</h5>
-                      <p className="fs-6">Front-End Developer</p>
-                    </div>
-                    <div className="d-flex justify-content-evenly social-icon m-4">
-                      <i className="fa-brands fa-facebook-f"></i>
-                      <i className="fa-brands fa-instagram"></i>
-                      <i className="fa-brands fa-twitter"></i>
-                      <i className="fa-brands fa-linkedin"></i>
-                      <i className="fa-brands fa-github"></i>
-                    </div>
-                  </div>
-                  <hr />
-                  <div className="user-details-container container">
-                    <table className="table">
-                      <tbody>
-                        <tr className="d-flex justify-content-between">
-                          <td>Date of birth:</td>
-                          <td>22-02-1995</td>
-                        </tr>
-                        <tr className="d-flex justify-content-between">
-                          <td>Residance</td>
-                          <td>BD</td>
-                        </tr>
-                        <tr className="d-flex justify-content-between">
-                          <td>Address:</td>
-                          <td>Dhaka,Bangladesh</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
-                  <div className="user-details-container container">
-                    <h4 className="fs-5 text-center pt-2">Languages</h4>
-                    <hr className="text-white" />
-                    <table className="table">
-                      <tbody>
-                        <tr className="d-flex justify-content-between">
-                          <td>Bangla</td>
-                          <td>100%</td>
-                        </tr>
-                        <tr className="d-flex justify-content-between">
-                          <td>English</td>
-                          <td>70%</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="user-details-container container">
-                    <h4 className="fs-5 text-center pt-2">Skills</h4>
-                    <hr className="text-white" />
-                    <table className="table">
-                      <tbody>
-                        <tr className="d-flex justify-content-between">
-                          <td>HTML</td>
-                          <td>90%</td>
-                        </tr>
-                        <tr className="d-flex justify-content-between">
-                          <td>CSS</td>
-                          <td>80%</td>
-                        </tr>
-                        <tr className="d-flex justify-content-between">
-                          <td>JS</td>
-                          <td>60%</td>
-                        </tr>
-                        <tr className="d-flex justify-content-between">
-                          <td>Bootstrap</td>
-                          <td>80%</td>
-                        </tr>
-                        <tr className="d-flex justify-content-between">
-                          <td>React js</td>
-                          <td>50%</td>
-                        </tr>
-                        <tr className="d-flex justify-content-between">
-                          <td>Material ui</td>
-                          <td>30%</td>
-                        </tr>
-                        <tr className="d-flex justify-content-between">
-                          <td>WordPress</td>
-                          <td>60%</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="download-button text-center">
-                    <button className="p-2">
-                      Download Button{" "}
-                      <i className="fa-sharp fa-solid fa-download icon"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
           <About />
           <Portfolio />

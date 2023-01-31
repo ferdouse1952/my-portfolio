@@ -12,7 +12,9 @@ const ReactCard = (props) => {
             <div className="project-details text-center">
               <h5>{title}</h5>
               <p>{desc}</p>
-              <a href={button}><button className="border-0 liveBtn p-2">See Live</button></a>
+              <button className="border-0 p-2 livebtn">
+                <a href={button}>See Live</a>
+              </button>
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ const Portfolio = () => {
           id="pills-tab"
           role="tablist"
         >
-          <li className="nav-item" role="presentation">
+          <li className="nav-item pe-2" role="presentation">
             <button
               className="nav-link active"
               id="pills-home-tab"

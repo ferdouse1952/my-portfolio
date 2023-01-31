@@ -13,7 +13,9 @@ const AllCard = (props) => {
             <div className="project-details text-center">
               <h5>{title}</h5>
               <p>{desc}</p>
-              <a href={button}><button className="border-0 liveBtn p-2">See Live</button></a>
+              <button className="p-2 livebtn">
+                <a href={button}>See Live</a>
+              </button>
             </div>
           </div>
         </div>
