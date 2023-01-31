@@ -1,26 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AllCard from "../AllCard/AllCard";
+import Projects from "../AllCard/projectData";
 import ReactCard from "../ReactCard/ReactCard";
-import WordpressProject from "../WordpressProject/WordpressProject";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./Portfolio.css";
 
 const Portfolio = () => {
-  const allCards = [
-    { id: 1, title: "Portfolio" },
-    { id: 2, title: "Portfolio" },
-    { id: 3, title: "Portfolio" },
-    { id: 4, title: "Portfolio" },
-  ];
-  const reactProjects = [
-    { id: 2, title: "Portfolio" },
-    { id: 3, title: "Portfolio" },
-  ];
-  const wordpressProjects = [
-    { id: 2, title: "Portfolio" },
-    { id: 3, title: "Portfolio" },
-    { id: 4, title: "Portfolio" },
-  ];
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="portfolio-section mt-4 p-5">
       <div className="porfolio-text text-white text-center">
@@ -60,20 +49,6 @@ const Portfolio = () => {
               React Js
             </button>
           </li>
-          <li className="nav-item" role="presentation">
-            <button
-              className="nav-link"
-              id="pills-contact-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact"
-              aria-selected="false"
-            >
-              WordPress
-            </button>
-          </li>
         </ul>
         <div className="tab-content" id="pills-tabContent">
           <div
@@ -84,8 +59,8 @@ const Portfolio = () => {
             tabindex="0"
           >
             <div className="row row-cols-1 row-cols-md-3 g-4">
-              {allCards.map((allCard) => (
-                <AllCard></AllCard>
+              {Projects.map((projects) => (
+                <AllCard key={projects.id} projects={projects}></AllCard>
               ))}
             </div>
           </div>
@@ -97,21 +72,8 @@ const Portfolio = () => {
             tabindex="0"
           >
             <div className="row row-cols-1 row-cols-md-3 g-4">
-              {reactProjects.map((reactProjects) => (
-                <ReactCard></ReactCard>
-              ))}
-            </div>
-          </div>
-          <div
-            className="tab-pane fade"
-            id="pills-contact"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab"
-            tabindex="0"
-          >
-            <div className="row row-cols-1 row-cols-md-3 g-4">
-              {wordpressProjects.map((wordpressProject) => (
-                <WordpressProject></WordpressProject>
+              {Projects.map((projects) => (
+                <ReactCard key={projects.id} projects={projects}></ReactCard>
               ))}
             </div>
           </div>

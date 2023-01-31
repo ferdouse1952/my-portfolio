@@ -1,17 +1,25 @@
-import React from 'react';
+import React from "react";
+import "./AllCard.css";
 
-const AllCard = () => {
-    return (
-        <div>
-            <div className="col">
-                <div className="card h-100">
-                    <img src="..." className="card-img-top" alt="..." />
-                    
+const AllCard = (props) => {
+  const { postImage, title, desc, button } = props.projects;
 
-                </div>
+  return (
+    <div>
+      <div className="col">
+        <div className="card border-0 h-100">
+          <div className="projetsImg">
+            <img src={postImage} className="card-img-top" alt="..." />
+            <div className="project-details text-center">
+              <h5>{title}</h5>
+              <p>{desc}</p>
+              <a href={button}><button className="border-0 liveBtn p-2">See Live</button></a>
             </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default AllCard;

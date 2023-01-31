@@ -170,7 +170,7 @@ const Profile = () => {
                 ></button>
               </div>
             </div>
-            <div className="offcanvas-body">
+            {/* <div className="offcanvas-body">
               <div>
                 <div className="side-bar p-4 h-100">
                   <div className="img-div mx-auto">
@@ -269,7 +269,7 @@ const Profile = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <About />
           <Portfolio />
