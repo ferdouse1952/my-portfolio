@@ -12,72 +12,31 @@ const Profile = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div>
+    <>
       <div className="row m-0">
-        <div data-aos="fade-right" className="col-3 side p-0 d-none d-lg-block">
-          <div className="side-bar text-center p-4 h-100">
-            {/* <h5 className="fs-3 pt-5">Ferdouse Binte Asad</h5>
-            <p className="fs-6">Front-End Developer</p> */}
-            <div className="d-flex justify-content-evenly social-icon">
+        <div className="col-1 px-0">
+          <div data-aos="fade-right" className="navbar">
+            <div className="mx-auto menu text-white">
               <a href="https://www.facebook.com/">
-                <i className="fa-brands fa-facebook-f"></i>
+                <i className="fa-brands fa-facebook-f d-block"></i>
               </a>
               <a href="https://www.instagram.com/">
-                <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram d-block"></i>
               </a>
               <a href="https://twitter.com/?lang=en">
-                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-twitter d-block"></i>
               </a>
               <a href="https://www.linkedin.com/">
-                <i className="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin d-block"></i>
               </a>
               <a href="https://github.com/">
                 <i className="fa-brands fa-github"></i>
               </a>
             </div>
-
-            <hr />
-
-            <div className="user-details-container container">
-              <h4 className="fs-5 text-center pt-2">Skills</h4>
-              <hr className="text-white" />
-              <table className="table">
-                <tbody>
-                  <tr className="d-flex justify-content-between">
-                    <td>HTML</td>
-                    <td>90%</td>
-                  </tr>
-                  <tr className="d-flex justify-content-between">
-                    <td>CSS</td>
-                    <td>80%</td>
-                  </tr>
-                  <tr className="d-flex justify-content-between">
-                    <td>JS</td>
-                    <td>60%</td>
-                  </tr>
-                  <tr className="d-flex justify-content-between">
-                    <td>Bootstrap</td>
-                    <td>80%</td>
-                  </tr>
-                  <tr className="d-flex justify-content-between">
-                    <td>React js</td>
-                    <td>50%</td>
-                  </tr>
-                  <tr className="d-flex justify-content-between">
-                    <td>Material ui</td>
-                    <td>30%</td>
-                  </tr>
-                  <tr className="d-flex justify-content-between">
-                    <td>WordPress</td>
-                    <td>60%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
           </div>
         </div>
 
-        <div className="col-lg-8 col-11 px-4">
+        <div className="col-10  px-4">
           {/* HERO SECTION */}
           <div className="heroSection" data-aos="fade-down">
             <div className="wrapper">
@@ -119,7 +78,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -10,11 +10,9 @@
   --bgFormEls: hsl(0, 0%, 14%);
   --bgFormElsFocus: hsl(0, 7%, 20%);
 }
-
 a {
   color: inherit;
 }
-
 input,
 select,
 textarea,
@@ -91,11 +89,9 @@ ul {
   transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
     transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
 }
-
 .my-form textarea {
   height: 170px;
 }
-
 .my-form ::placeholder {
   color: inherit;
   /*Fix opacity issue on Firefox*/
@@ -108,7 +104,7 @@ ul {
 .my-form button:enabled:hover,
 .my-form button:focus,
 .my-form input[type="checkbox"]:focus + label {
-  background: var(--bgFormElsFocus);
+  background: #311410;
 }
 
 .my-form select:focus,
@@ -155,6 +151,8 @@ ul {
 
 .my-form button {
   font-weight: bold;
+  color: #fff;
+  background:#a84f55;
 }
 
 .my-form button > * {
@@ -222,24 +220,6 @@ ul {
   border-right: 2px solid var(--white);
   transform: rotate(45deg);
 }
-
-
-/* FOOTER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-footer {
-  font-size: 1rem;
-  text-align: right;
-  backface-visibility: hidden;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-footer span {
-  color: var(--red);
-}
-
 
 /* MQ
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

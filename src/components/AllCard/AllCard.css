@@ -1,12 +1,14 @@
-.projetsImg{
-    width: 358px;
+.projectImg{
+    width: 464px;
     height: 340px;
     border: 6px solid #AA7676;
     border-radius: 5px;
-    overflow: hidden;
     position: relative;
 }
-.projetsImg img{
+.cardImg{
+ overflow: hidden;
+}
+.projectImg img{
     width: 100%;
     height: 100%;
     border-radius: 1px;
@@ -23,13 +25,13 @@
     backdrop-filter: blur(5px);
     transition: 0.5s;
 }
-.projetsImg:hover .project-details{
+.cardImg:hover .project-details{
     right: 0;
 }
 .livebtn{
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
-    background-color: #141313ee;
+    background-color: #a84f55;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     border-radius: 10px;
     border: none;
@@ -40,5 +42,5 @@
     color: #fff;
 }
 .livebtn:hover{
-    background-color: rgba(0, 0, 255, 0.082);
+    background-color: #311410;
 }
