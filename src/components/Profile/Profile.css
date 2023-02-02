@@ -1,28 +1,23 @@
 .side-bar,
-.hero-section,
+.heroSection,
 .navbar {
-    background: rgba(223, 223, 223, 0.158);
+    background: #74606156;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.9px);
     -webkit-backdrop-filter: blur(8.9px);
     border: 1px solid rgba(223, 223, 223, 0.3);
 }
-.hero-section {
+.heroSection {
+    font-family: "Raleway", sans-serif;
+    color: #ecf0f1;
+    height: 70vh;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
 }
-/* .side{
-    width: inherit;
-    height: 100vh;
-    position: fixed;
-} */
-.side-bar h5, p {
-    font-family: 'Lobster Two', cursive;
-    color: #fff;
-}
+
 .social-icon i {
     color: #fff;
-    background-color: #141313ee;
+    background-color: #a84f55;
     width: 30px;
     height: 29px;
     padding: 6px;
@@ -32,7 +27,7 @@
 }
 
 .social-icon i:hover {
-    background-color: rgba(0, 0, 255, 0.082);
+    background-color: #311410;
     transform: scale(1.3);
     border: 1px solid rgb(37, 35, 35);
 }
@@ -52,44 +47,34 @@ h4 {
     color: #fff;
     border: none;
 }
-.download-button button,
-.hire-button {
-    font-family: 'Kanit', sans-serif;
-    font-weight: 300;
-    background-color: #141313ee;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    border-radius: 10px;
-    color: #fff;
-    transition: 1s;
-    border: none;
-}
-.download-button button:hover {
-    background-color: rgba(0, 0, 255, 0.082);
-    transform: scale(1.3);
-    border: 1px solid rgb(37, 35, 35);
-}
-.hire-button:hover {
-    background-color: rgba(0, 0, 255, 0.082);
-    transform: scale(1.3);
-    border: 1px solid rgb(37, 35, 35);
-}
+
 .icon {
     font-size: 13px;
 }
 
-/* HERO SECTION */
-.hero-section {
-    height: 467px;
-}
-.text-div {
-    font-family: 'Lobster Two', cursive;
-}
-.text-div h1 {
-    font-size: 50px;
-}
-
-.text-div h2 span {
-    color: rgb(172, 119, 119);
+.btn {
+    padding: 6px 8px;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    background: #a84f55;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  }
+.btn:hover, .btn:focus {
+    opacity: 0.8;
+    background-color: #311410;
+    color: #fff;
+    border: none;
 }
 /* NAVBAR */
 .navbar {
@@ -97,40 +82,133 @@ h4 {
     height: 100vh;
     position: fixed;
 }
-.menu i {
+
+.navbar a{
+    text-decoration: none;
+    
+}
+.menu h6 {
     color: #fff;
-    background-color: rgba(114, 114, 114, 0.212);
+    background-color: #a84f55;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    font-size: 22px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 12px;
+    text-align: center;
     margin-top: 30px;
     border-radius: 25px;
     transition: 0.5s;
 }
     
-.menu i:hover {
-    background-color: rgba(0, 0, 255, 0.082);
-    transform: scale(1.3);
+.menu h6:hover {
+    background-color: #311410;
+    transform: scale(1.2);
     border: 1px solid rgb(37, 35, 35);
 }
-.toggle-button{
-    position: fixed;
-    left: 0;
-    top: 20px;
-    z-index: 2;
-}
-.toggle-button .open-btn {
-    font-family: 'Kanit', sans-serif;
-    font-weight: 300;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    border-radius: 0 4px 4px 0;
-    background-color: black;
-    color: #fff;
-    transition: 1s;
-    border: none;
-}
+
 
 /* RESPONSIVE RESPONSIVE HERO, SIDEBAR & NAVBAR*/
+@media (min-width: 920px) {
+    .heroSection .wrapper {
+       position: absolute;
+       top: 50%;
+       left: 45%;
+       transform: translate(-50%, -50%);
+       width: 700px;
+       height: 450px;
+     }
+    .heroSection .wrapper span {
+       position: fixed;
+     }
+     .greeting {
+       font-size: 64px;
+       font-weight: 200px;
+       opacity: 0.8;
+       top: 40%;
+       left: 20%;
+       -webkit-animation-name: greetingAnim, clearSpanAnim;
+               animation-name: greetingAnim, clearSpanAnim;
+       -webkit-animation-duration: 0.8s, 0.3s;
+               animation-duration: 0.8s, 0.3s;
+       -webkit-animation-delay: 1.2s, 4.5s;
+               animation-delay: 1.2s, 4.5s;
+       -webkit-animation-fill-mode: forwards;
+               animation-fill-mode: forwards;
+     }
+   
+     .name {
+       font-size: 32px;
+       opacity: 0;
+       left: 45%;
+       top: 35%;
+       transform: rotate(90deg);
+       -webkit-animation-name: nameAnim, clearSpanAnim;
+               animation-name: nameAnim, clearSpanAnim;
+       -webkit-animation-duration: 0.5s, 0.3s;
+               animation-duration: 0.5s, 0.3s;
+       -webkit-animation-delay: 2s, 4.5s;
+               animation-delay: 2s, 4.5s;
+       -webkit-animation-fill-mode: forwards;
+               animation-fill-mode: forwards;
+     }
+   
+     .tagline {
+       font-size: 16px;
+       opacity: 0;
+       top: 44%;
+       left: 40%;
+       -webkit-animation-name: taglineAnim, clearSpanAnim;
+               animation-name: taglineAnim, clearSpanAnim;
+       -webkit-animation-duration: 0.5s, 0.3s;
+               animation-duration: 0.5s, 0.3s;
+       -webkit-animation-delay: 2.5s, 4.5s;
+               animation-delay: 2.5s, 4.5s;
+       -webkit-animation-fill-mode: forwards;
+               animation-fill-mode: forwards;
+     }
+   
+     .action {
+       font-size: 22px;
+       text-transform: uppercase;
+       transform: rotate(-90deg);
+       font-weight: 800;
+       top: 52%;
+       left: 48%;
+       opacity: 0;
+       -webkit-animation-name: actionAnim, clearSpanAnim;
+               animation-name: actionAnim, clearSpanAnim;
+       -webkit-animation-duration: 0.5s, 0.3s;
+               animation-duration: 0.5s, 0.3s;
+       -webkit-animation-delay: 3.5s, 4.5s;
+               animation-delay: 3.5s, 4.5s;
+       -webkit-animation-fill-mode: forwards;
+               animation-fill-mode: forwards;
+     }
+ }
+ @keyframes greetingAnim {
+    100% {
+      left: 18%;
+      transform: rotate(-90deg);
+    }
+  }
+  @keyframes nameAnim {
+    100% {
+      opacity: 1;
+      left: 48%;
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes taglineAnim {
+    100% {
+      opacity: 1;
+      left: 48%;
+    }
+  }
+  @keyframes actionAnim {
+    100% {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+  }
 /* @media screen and (max-width:1140px){
     .user-details-container table td,
     h4 {
@@ -186,5 +264,5 @@ h4 {
     .menu i{
         font-size: 12px;
     }
-}
- */
+} */
+
