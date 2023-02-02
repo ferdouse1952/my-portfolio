@@ -22,11 +22,12 @@
     object-fit: cover;
 }
 .about-section h2{
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 30px;
     
 }
 .about-section p{
-    font-size: 15px;
+    font-size: 17px;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     text-align: justify;

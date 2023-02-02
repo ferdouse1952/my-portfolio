@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Contact from "../Contact/Contact";
+import Skill from "../Skill/Skill";
 
 const Profile = () => {
   useEffect(() => {
@@ -55,6 +56,7 @@ const Profile = () => {
 
           <About />
           <Portfolio />
+          <Skill/>
           <Contact />
         </div>
         {/* Navbar */}

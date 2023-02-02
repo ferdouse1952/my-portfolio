@@ -58,9 +58,9 @@ ul {
     border: 1px solid rgba(223, 223, 223, 0.3);
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
-   
-    /* width: 1720px; */
-}
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -69,6 +69,8 @@ ul {
 /* FORM ELEMENTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .my-form h1 {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 30px;
   margin-bottom: 1.5rem;
 }
 
